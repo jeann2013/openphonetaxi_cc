@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<script charset="utf-8" type="text/javascript" src="js/otracosa.js"></script>
+	 <!-- <script charset="utf-8" type="text/javascript" src="http://190.35.198.122:8080/opentaxi/phone/librerias.js"></script>  -->
+	 <script charset="utf-8" type="text/javascript" src="http://186.74.196.234:8080/yellowcar/phone/librerias.js"></script> 
+    <title>OpenPhoneTaxi</title>    
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+  </head>
+  
+  <body onload="buscar_usuario_pa();" >
+    <div class="container">
+    	<div  align="center" class="alert alert-success">
+
+      <form id="form1" name="form1" class="form-signin">
+        
+        		<div class="input-group">
+		  <span class="input-group-addon">@</span>
+		  <input id="cliente" readonly type="text" class="form-control" value="">
+		</div>
+		<br>
+        <button name="estado"  onclick="estados()" id="estado" class="btn btn-lg btn-primary btn-block" type="button"><span  class="glyphicon glyphicon-transfer"> </span> Estado de Flota</button>  
+        <button name="facturado"  onclick="facturacion()" id="facturado" class="btn btn-lg btn-primary btn-block" type="button"><span  class="glyphicon glyphicon-th-list"> </span> Facturacion</button>  
+        <button name="operadores" onclick="operadores_deuda()" id="facturado" class="btn btn-lg btn-primary btn-block" type="button"><span  class="glyphicon glyphicon-user"> </span> Operadores</button>  
+        <button name="salir" id="salir" onclick="salida()" class="btn btn-lg btn-danger btn-block" type="button"><span class="glyphicon glyphicon-off"> </span> Salir</button>  
+    	
+        <input id="cod_cliente" name="cod_cliente" value="" type="hidden" />   
+      
+      </form>
+      <span  class="label label-default">&copy JEAN CARLOS NUNEZ HERNANDEZ</span>
+  </div>  
+    </div> 
+     
+  </body>
+</html>

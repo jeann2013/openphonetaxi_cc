@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>OpenPhoneTaxi</title>
+<link rel="stylesheet" type="text/css" href="css/scroll.css">
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+<script type="application/javascript" src="js/iscroll.js?v4"></script>
+<script type="application/javascript" src="js/scroll.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/otracosa.js"></script>
+ <!-- <script charset="utf-8" type="text/javascript" src="http://190.35.198.122:8080/opentaxi/phone/librerias.js"></script> -->
+ <script charset="utf-8" type="text/javascript" src="http://186.74.196.234:8080/yellowcar/phone/librerias.js"></script> 
+<script type="text/javascript">
+
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper', { scrollbarClass: 'myScrollbar' });
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+</script> 
+<link href="css/signin.css" rel="stylesheet">
+</head>
+
+<body onload="buscar_usuario_fac();" >
+
+<form id="form1" name="form1" class="form-signin">
+
+<div id="header">
+<div class="btn-group">
+  <button type="button" onclick="facturacion()" class="btn btn-primary"><span  class="glyphicon glyphicon-retweet"> </span> Regfrescar</button>
+  <button type="button" onclick="panel_fact()" class="btn btn-danger"><span class="glyphicon glyphicon-off"> </span> Salir</button>  
+</div>
+
+
+<img id="logo" src="img/logo2.png"/>
+</div>
+
+ <input id="cod_cliente" name="cod_cliente" value="" type="hidden" />
+
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+		<li id="1"></li>
+		<li id="2"></li>
+		<!--
+		<li id="3"></li>
+		<li id="4"></li>
+		<li id="5"></li>
+		<li id="6"></li>
+		<li id="7"></li>
+		<li id="8"></li>
+		<li id="9"></li>
+		<li id="10"></li>
+		<li id="11"></li>
+		<li id="12"></li>
+		<li id="13"></li>
+		<li id="14"></li>
+		<li id="15"></li>
+		<li id="16"></li>
+		<li id="17"></li>
+		<li id="18"></li>
+		<li id="19"></li>
+		<li id="20"></li>
+		<li id="21"></li>
+		<li id="22"></li>
+		<li id="23"></li> -->
+		
+		
+		</ul>
+	</div>
+</div>  
+<div align="center" id="footer">
+
+
+
+<img id="autor" src="img/footer.png"/>
+</div>
+</form>
+</body>
+</html>

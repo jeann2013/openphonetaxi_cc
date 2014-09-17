@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.OpenPhoneTaxi" version="1.25" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>OpenPhoneTaxi</name>
+    <description>
+       Aplicacion para Consulta de Informacion de OpenTaxiOnline
+    </description>
+    <author email="jeancarlosn@hotmail.com" href="http://compuzulia.net">
+       Jean Carlos Nunez
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <icon src="img/logo.png" />
+</widget>

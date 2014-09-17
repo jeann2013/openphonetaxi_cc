@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>OpenPhoneTaxi</title>
+
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+<link rel="stylesheet" type="text/css" href="css/scroll.css">
+
+<script type="application/javascript" src="js/iscroll.js"></script>
+<script type="application/javascript" src="js/scroll.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/otracosa.js"></script>
+ <!-- <script charset="utf-8" type="text/javascript" src="http://190.35.198.122:8080/opentaxi/phone/librerias.js"></script> -->
+ <script charset="utf-8" type="text/javascript" src="http://186.74.196.234:8080/yellowcar/phone/librerias.js"></script> 
+ <link href="dist/css/bootstrap.css" rel="stylesheet">
+ <link href="css/signin.css" rel="stylesheet">
+<script>
+		
+    	
+    </script>
+</head>
+
+ <body onload="buscar_usuario_ef();" >
+
+<form id="form1" name="form1" class="form-signin">
+
+
+
+<div id="header">
+
+
+
+<div class="btn-group">
+  <button type="button" onclick="estados()" class="btn btn-primary"><span  class="glyphicon glyphicon-retweet"> </span> Refrescar</button>
+  <button type="button" onclick="panel_estado()" class="btn btn-danger"><span class="glyphicon glyphicon-off"> </span> Salir</button>  
+</div>
+
+
+
+
+<img  id="logo" src="img/logo2.png"/>
+
+</div>
+
+ <input id="cod_cliente" name="cod_cliente" value="" type="hidden" />
+
+<div id="wrapper">
+
+	<div id="scroller">
+		<ul id="thelist"> 
+			
+		</ul>
+	</div>
+  
+	  
+</div> 
+</form>
+<div align="center" id="footer">
+<img id="autor" src="img/footer.png"/>
+</div>
+</body>
+</html>

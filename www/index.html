@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>OpenPhoneTaxi</title>
+
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+	<script charset="utf-8" type="text/javascript" src="js/otracosa.js"></script>
+  
+  <script charset="utf-8" type="text/javascript" src="phonegap.js"></script>
+			  
+
+	  <script charset="utf-8" type="text/javascript" src="http://54.213.164.112/opentaxi/phone/librerias_cc.js"></script> 
+	<script>
+		function closeWindow() 
+		{
+    		navigator.app.exitApp();
+		}
+	</script>
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+  </head>
+
+  <body onload="buscar_autos_cc();">
+  	
+ <div class="jumbotron">
+<div align="center" class="container">
+  
+  <span  class="label label-danger">OpenPhoneTaxi</span>
+  <div id=""  align="center" class="">
+      <button class='btn btn-warning btn-lg'  onclick='refrescar()'  type='button' aria-hidden='true'>Refrescar</button>
+  </div>
+  <br>
+  <div id="master" name='master' align="center" class="">
+  </div>
+</div> 
+
+     <div align="center" id="footer">
+      <div class="container">
+      <button class='btn btn-danger btn-lg'  onclick='closeWindow()'  type='button' aria-hidden='true'>Salir</button><br>
+        <span class="label label-default">&copy JEAN CARLOS NUNEZ</span>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

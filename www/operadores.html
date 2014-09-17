@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>OpenPhoneTaxi</title>
+
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+	<script charset="utf-8" type="text/javascript" src="js/otracosa.js"></script>
+
+	  <script charset="utf-8" type="text/javascript" src="http://54.213.164.112/opentaxi/phone/librerias_cc.js"></script> 
+	
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+  </head>
+
+  <body onload="buscar_operador();">
+  	
+ <div align="center" class="jumbotron">
+    
+      <form name="form1" id="form1" class="">
+      	 <button name="salir" id="salir" onclick="refrescar()" class="btn btn-lg btn-danger btn-block" type="button"><span class="glyphicon glyphicon-off"> </span> Salir</button>
+        
+        <input id="num_und" name="num_und" required type="hidden" >
+       
+         <table width="70%" border="0" class="">
+         	<tr>
+         		<td colspan="2">
+         			<div align="center">
+         			<img id="foto_ope"  src="" width="200" height="150" />
+         			</div>
+         		</td>
+         	</tr>
+         	<tr>
+         		<td colspan="">
+         			<div align="left">
+         				<strong>
+         				Nombre:
+         				</strong>
+         			</div>
+         		</td>
+         		<td colspan="">
+         			<div align="center">
+         				<input type="text" class="form-control"   name="nombre_ope" id="nombre_ope" value="" readonly="true" />
+         			</div>
+         		</td>
+         	</tr>
+         	
+         	<tr>
+         		<td>
+				<div align="left">
+					<strong>
+         				Monto Diario:
+         			</strong>
+         		</div>	
+         		</td>
+         		<td>
+	         		<div id=""  align="left">
+	         			<input type="text" class="form-control" name="monto_diario" id="monto_diario" value="" readonly="true" />
+					</div>	
+         		</td>
+         	
+         	
+         </table>
+      </form>
+    </div> 
+     <div align="center" id="footer">
+      <div class="container">
+        <span class="label label-default">&copy JEAN CARLOS NUNEZ</span>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
